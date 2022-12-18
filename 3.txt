@@ -1,0 +1,20 @@
+method 2:
+root@tempcat:/usr/bin# chmod 600 /usr/bin/chmod
+root@tempcat:/usr/bin# ls -l /usr/bin/chmod
+-rw------- 1 root root 64288 Feb 28  2019 /usr/bin/chmod
+root@tempcat:/usr/bin# /lib64/ld-linux-x86-64.so.2 /usr/bin/chmod 755 /usr/bin/chmod
+root@tempcat:/usr/bin# ls -l /usr/bin/chmod
+-rwxr-xr-x 1 root root 64288 Feb 28  2019 /usr/bin/chmod
+
+
+method 2:
+root@tempcat:~# which chmod
+/usr/bin/chmod
+root@tempcat:~# cd /usr/bin/
+root@tempcat:/usr/bin# cp zless zless.bak
+root@tempcat:/usr/bin# cat chmod > zless
+root@tempcat:/usr/bin# zless 755 chmod
+root@tempcat:/usr/bin# ls -l chmod
+-rwxr-xr-x 1 root root 64288 Feb 28  2019 chmod
+root@tempcat:/usr/bin# cat zless.bak > zless
+root@tempcat:/usr/bin# rm zless.bak

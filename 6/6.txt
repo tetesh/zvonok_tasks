@@ -1,0 +1,2 @@
+HOW TO:
+`chmod +x 6.sh && ./6.sh`

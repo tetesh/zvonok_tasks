@@ -1,0 +1,6 @@
+1)
+`ip route flush`
+`sudo dhclient -r enp6s0`
+`sudo dhclient enp6s0`
+
+2) Если не помогло смотрим дебаг почему dhclient не может добавить маршруты (если ip получен заново)`sudo dhclient enp6s0 -v`
